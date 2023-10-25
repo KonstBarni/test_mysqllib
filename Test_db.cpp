@@ -1,5 +1,5 @@
 #include <iostream>
-#include <mysql.h>
+#include <mariadb/mysql.h>
  
 using namespace std;
  
@@ -18,7 +18,7 @@ int main() {
 	}
  
 	// Подключаемся к серверу
-	if (!mysql_real_connect(&mysql, "localhost", "root", "PrograLux", "testdb", NULL, NULL, 0)) {
+	if (!mysql_real_connect(&mysql, "localhost", "admin", "admin", "testdb", NULL, NULL, 0)) {
 		// Если нет возможности установить соединение с БД выводим сообщение об ошибке
 		cout << "Error: can't connect to database " << mysql_error(&mysql) << endl;
 	}
