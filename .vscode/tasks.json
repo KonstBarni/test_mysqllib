@@ -10,8 +10,7 @@
                 "${fileDirname}/*cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
-                "-I","/usr/include/mysql-cppconn-8",
-                "-L","/usr/lib/mysql",
+                "-lmysqlclient",
             ],
             "options": {
                 "cwd": "${workspaceFolder}",

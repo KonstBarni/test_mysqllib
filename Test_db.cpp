@@ -1,5 +1,5 @@
 #include <iostream>
-#include <mariadb/mysql.h>
+#include <mysql/mysql.h>
  
 using namespace std;
  
